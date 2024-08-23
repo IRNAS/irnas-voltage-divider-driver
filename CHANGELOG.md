@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+-   Depends on/selects ADC driver to make it compatible with Zephyr new Voltage Divider driver.
+
+### Fixed
+
+-   Update init priority.
+
 ## [2.0.0] - 2023-01-12
 
 ### Added
