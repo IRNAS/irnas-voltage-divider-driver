@@ -214,7 +214,7 @@ static int voltage_divider_init(const struct device *dev)
 	};                                                                                         \
                                                                                                    \
 	DEVICE_DT_INST_DEFINE(N, voltage_divider_init, NULL, &divider_data_##N,                    \
-			      &divider_config_##N, APPLICATION, CONFIG_APPLICATION_INIT_PRIORITY,  \
+			      &divider_config_##N, POST_KERNEL, CONFIG_APPLICATION_INIT_PRIORITY,  \
 			      NULL);
 
 DT_INST_FOREACH_STATUS_OKAY(VOLTAGE_DIVIDER_INIT)

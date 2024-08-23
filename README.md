@@ -4,6 +4,8 @@ This repository contains driver and basic test for voltage divider driver, based
 on Zephyr Battery Voltage Measurement sample. Driver uses Zephyr ADC
 infrastructure to measure the voltage of the device power supply.
 
+**IMPORTANT:** From NCS v2.7.0 on, there is no need to use this driver as there is existing Zephyr driver available.
+
 **IMPORTANT:** This driver is only suitable for Nordic chips, like `nrf52832`,
 `nrf52840` and so on. This is due to the chip specific way how adc channels are
 configured.
